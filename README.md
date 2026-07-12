@@ -242,7 +242,7 @@ Computer Science Student | AI/ML Enthusiast
 
 GitHub: https://github.com/Vansh2639
 
-LinkedIn: *(Add your LinkedIn profile here)*
+LinkedIn: https://www.linkedin.com/in/vansh-garg-2850b332a/
 
 ---
 
