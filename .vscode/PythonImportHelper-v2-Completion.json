@@ -1,0 +1,319 @@
+[
+    {
+        "label": "genai",
+        "importPath": "google",
+        "description": "google",
+        "isExtraImport": true,
+        "detail": "google",
+        "documentation": {}
+    },
+    {
+        "label": "genai",
+        "importPath": "google",
+        "description": "google",
+        "isExtraImport": true,
+        "detail": "google",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleGenerativeAIEmbeddings",
+        "importPath": "langchain_google_genai",
+        "description": "langchain_google_genai",
+        "isExtraImport": true,
+        "detail": "langchain_google_genai",
+        "documentation": {}
+    },
+    {
+        "label": "fitz",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "fitz",
+        "description": "fitz",
+        "detail": "fitz",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "langchain_core.documents",
+        "description": "langchain_core.documents",
+        "isExtraImport": true,
+        "detail": "langchain_core.documents",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "RecursiveCharacterTextSplitter",
+        "importPath": "langchain_text_splitters",
+        "description": "langchain_text_splitters",
+        "isExtraImport": true,
+        "detail": "langchain_text_splitters",
+        "documentation": {}
+    },
+    {
+        "label": "FAISS",
+        "importPath": "langchain_community.vectorstores",
+        "description": "langchain_community.vectorstores",
+        "isExtraImport": true,
+        "detail": "langchain_community.vectorstores",
+        "documentation": {}
+    },
+    {
+        "label": "extract_text_from_pdf",
+        "importPath": "utils.pdf_reader",
+        "description": "utils.pdf_reader",
+        "isExtraImport": true,
+        "detail": "utils.pdf_reader",
+        "documentation": {}
+    },
+    {
+        "label": "get_embedding_model",
+        "importPath": "utils.embeddings",
+        "description": "utils.embeddings",
+        "isExtraImport": true,
+        "detail": "utils.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "create_vector_store",
+        "importPath": "utils.vector_store",
+        "description": "utils.vector_store",
+        "isExtraImport": true,
+        "detail": "utils.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "split_text",
+        "importPath": "utils.text_splitter",
+        "description": "utils.text_splitter",
+        "isExtraImport": true,
+        "detail": "utils.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "get_retriever",
+        "importPath": "utils.retriever",
+        "description": "utils.retriever",
+        "isExtraImport": true,
+        "detail": "utils.retriever",
+        "documentation": {}
+    },
+    {
+        "label": "get_answer",
+        "importPath": "utils.chatbot",
+        "description": "utils.chatbot",
+        "isExtraImport": true,
+        "detail": "utils.chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "rewrite_question",
+        "importPath": "utils.chatbot",
+        "description": "utils.chatbot",
+        "isExtraImport": true,
+        "detail": "utils.chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "render_markdown",
+        "importPath": "utils.renderer",
+        "description": "utils.renderer",
+        "isExtraImport": true,
+        "detail": "utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "format_code_blocks",
+        "kind": 2,
+        "importPath": "utils.chatbot",
+        "description": "utils.chatbot",
+        "peekOfCode": "def format_code_blocks(text):\n    lines = text.splitlines()\n    formatted = []\n    inside_code = False\n    for line in lines:\n        if line.strip() == \"js\":\n            if inside_code:\n                formatted.append(\"```\")\n            formatted.append(\"```javascript\")\n            inside_code = True",
+        "detail": "utils.chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "rewrite_question",
+        "kind": 2,
+        "importPath": "utils.chatbot",
+        "description": "utils.chatbot",
+        "peekOfCode": "def rewrite_question(question, history):\n    client = genai.Client(api_key=os.getenv(\"GOOGLE_API_KEY\"))\n    prompt = f\"\"\"\nYou are a query rewriting assistant.\nYour ONLY job is to rewrite follow-up questions into complete standalone questions.\nConversation History:\n{history}\nCurrent User Question:\n{question}\nRules:",
+        "detail": "utils.chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "get_answer",
+        "kind": 2,
+        "importPath": "utils.chatbot",
+        "description": "utils.chatbot",
+        "peekOfCode": "def get_answer(question, docs):\n    client = genai.Client(api_key=os.getenv(\"GOOGLE_API_KEY\"))\n    context = \"\"\n    for doc in docs:\n        content = format_code_blocks(doc.page_content)\n        context += f\"\"\"\n    File: {doc.metadata[\"source\"]}\n    Page: {doc.metadata[\"page\"]}\n    {content}\n----------------------------------------",
+        "detail": "utils.chatbot",
+        "documentation": {}
+    },
+    {
+        "label": "get_embedding_model",
+        "kind": 2,
+        "importPath": "utils.embeddings",
+        "description": "utils.embeddings",
+        "peekOfCode": "def get_embedding_model():\n    embeddings = GoogleGenerativeAIEmbeddings(\n        model=\"models/gemini-embedding-2\",\n        google_api_key=os.getenv(\"GOOGLE_API_KEY\"),\n    )\n    return embeddings",
+        "detail": "utils.embeddings",
+        "documentation": {}
+    },
+    {
+        "label": "extract_text_from_pdf",
+        "kind": 2,
+        "importPath": "utils.pdf_reader",
+        "description": "utils.pdf_reader",
+        "peekOfCode": "def extract_text_from_pdf(uploaded_files):\n    documents = []\n    total_pages = 0\n    for uploaded_file in uploaded_files:\n        pdf = fitz.open(\n            stream=uploaded_file.read(),\n            filetype=\"pdf\",\n        )\n        total_pages += len(pdf)\n        for page_number, page in enumerate(pdf):",
+        "detail": "utils.pdf_reader",
+        "documentation": {}
+    },
+    {
+        "label": "render_markdown",
+        "kind": 2,
+        "importPath": "utils.renderer",
+        "description": "utils.renderer",
+        "peekOfCode": "def render_markdown(answer):\n    pattern = r\"```(\\w+)?\\n(.*?)```\"\n    parts = re.split(pattern, answer, flags=re.DOTALL)\n    i = 0\n    while i < len(parts):\n        if i % 3 == 0:\n            if parts[i].strip():\n                st.markdown(parts[i])\n        else:\n            language = parts[i] if parts[i] else \"text\"",
+        "detail": "utils.renderer",
+        "documentation": {}
+    },
+    {
+        "label": "get_retriever",
+        "kind": 2,
+        "importPath": "utils.retriever",
+        "description": "utils.retriever",
+        "peekOfCode": "def get_retriever(vector_store):\n    retriever = vector_store.as_retriever(\n        search_type=\"similarity\",\n        search_kwargs={\n            \"k\": 5,\n        },\n    )\n    return retriever",
+        "detail": "utils.retriever",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "utils.test",
+        "description": "utils.test",
+        "peekOfCode": "client = genai.Client(api_key=os.getenv(\"GOOGLE_API_KEY\"))\nfor model in client.models.list():\n    print(model.name)",
+        "detail": "utils.test",
+        "documentation": {}
+    },
+    {
+        "label": "split_text",
+        "kind": 2,
+        "importPath": "utils.text_splitter",
+        "description": "utils.text_splitter",
+        "peekOfCode": "def split_text(documents):\n    splitter = RecursiveCharacterTextSplitter(\n        chunk_size=1000,\n        chunk_overlap=200,\n        length_function=len,\n    )\n    chunks = splitter.split_documents(documents)\n    return chunks",
+        "detail": "utils.text_splitter",
+        "documentation": {}
+    },
+    {
+        "label": "create_vector_store",
+        "kind": 2,
+        "importPath": "utils.vector_store",
+        "description": "utils.vector_store",
+        "peekOfCode": "def create_vector_store(chunks, embeddings):\n    vector_store = FAISS.from_documents(\n        documents=chunks,\n        embedding=embeddings,\n    )\n    return vector_store",
+        "detail": "utils.vector_store",
+        "documentation": {}
+    },
+    {
+        "label": "load_vector_store",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def load_vector_store(uploaded_files):\n    documents, total_pages = extract_text_from_pdf(uploaded_files)\n    chunks = split_text(documents)\n    embeddings = get_embedding_model()\n    vector_store = create_vector_store(\n        chunks,\n        embeddings,\n    )\n    return (vector_store, total_pages, len(chunks))\ndef show_sources(sources):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "show_sources",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def show_sources(sources):\n    shown = set()\n    for doc in sources:\n        source = (doc.metadata[\"source\"], doc.metadata[\"page\"])\n        if source in shown:\n            continue\n        with st.expander(\n            f\"📄 {source[0]} • Page {source[1]}\",\n            expanded=False,\n        ):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_PREVIEW",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "MAX_PREVIEW = 350\nSTREAM_DELAY = 0.03\nif \"messages\" not in st.session_state:\n    st.session_state.messages = []\nst.set_page_config(\n    page_title=\"AI PDF Chatbot\",\n    page_icon=\"🤖\",\n    layout=\"wide\",\n    initial_sidebar_state=\"expanded\",\n)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "STREAM_DELAY",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "STREAM_DELAY = 0.03\nif \"messages\" not in st.session_state:\n    st.session_state.messages = []\nst.set_page_config(\n    page_title=\"AI PDF Chatbot\",\n    page_icon=\"🤖\",\n    layout=\"wide\",\n    initial_sidebar_state=\"expanded\",\n)\n@st.cache_resource",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "CUSTOM_CSS",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "CUSTOM_CSS = \"\"\"\n<style>\n.hero{\npadding:35px;\nborder-radius:20px;\nbackground:linear-gradient(\n90deg,\n#0f172a,\n#1e3a8a\n);",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "uploaded_files",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "uploaded_files = st.file_uploader(\n    \"Upload PDF Files\", type=\"pdf\", accept_multiple_files=True\n)\nif not uploaded_files:\n    st.info(\"\"\"\n### 👋 Welcome!\nUpload one or more PDF documents to begin.\nOnce uploaded, you can:\n- 📄 Ask questions about your PDFs\n- 🔍 Search across multiple documents",
+        "detail": "app",
+        "documentation": {}
+    }
+]
