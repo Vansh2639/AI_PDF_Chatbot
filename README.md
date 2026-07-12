@@ -1,3 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+![RAG](https://img.shields.io/badge/RAG-FAISS-blueviolet)
 # 🤖 AI PDF Chatbot
 
 An AI-powered PDF Question Answering application built using **Retrieval-Augmented Generation (RAG)**. Upload one or multiple PDF documents, ask questions in natural language, and receive context-aware answers powered by **Google Gemini**, **LangChain**, and **FAISS**.
